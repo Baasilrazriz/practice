@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice tailwind</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@3.7.3/dist/full.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="">
+
+  <!--nav bar-->
+  <nav class="w-full h-18 bg-gray-800  flex  px-4 items-center justify-between  " id="navbar">
+    <div class="text-2xl  text-gray-400 ">
+      <div class="font-bold w-56">
+        <img class="w-full h-full object-contain" src="/img/flg_logo11134.png" alt="">
+      </div>
+    </div>
+    <div>
+      <ul class="md:flex font-semibold hidden  text-gray-400">
+        <li class="m-[14px] cursor-pointer  hover:font-bold text-base hover:text-white"><a href="#home">Home</a></li>
+        <li class="m-[14px] cursor-pointer  hover:font-bold text-base hover:text-white"><a href="#about">About</a></li>
+        <li class="m-[14px] cursor-pointer  hover:font-bold text-base hover:text-white"><a
+            href="#education">Education</a></li>
+        <li class="m-[14px] cursor-pointer  hover:font-bold text-base hover:text-white"><a href="#skills">Skills</a>
+        </li>
+        <li class="m-[14px] cursor-pointer  hover:font-bold text-base hover:text-white"><a href="#proj">Projects</a>
+        </li>
+        <li class="m-[14px] cursor-pointer  hover:font-bold text-base hover:text-white"><a href="#con">Contact</a></li>
+      </ul>
+    </div>
+      
+
+
+  
+
+    <div class="m-4 pr-4">
+      <div class="w-6 cursor-pointer hidden md:block"><img src="/img/crescent-moon.png" alt=""></div>
+    </div>
+
+
+    <div class="md:hidden pb-2">
+      <a id="mobile-viewbtn" class="text-5xl font-semibold  text-gray-400" href="#">&#8801;</a>
+    </div>
+    
+    
+  </nav>
+
+  <nav class="bg-gray-800 hidden" id="mobile-nav" >
+    <div class=" md:hidden " >
+      
+
+  
+  <button id="close" class="text-gray-500 text-4xl md:pl-[28rem] ml-[25rem]">X</button>
+
+      <div class="py-4 overflow-y-auto">
+        <ul class="space-y-2 font-bold text-gray-500 text-center">
+      <li class=" cursor-pointer  hover:font-extrabold font-bold  text-xl underline hover:text-white"><a href="#home">Home</a></li>
+      <li class=" cursor-pointer  hover:font-extrabold font-bold text-xl underline hover:text-white"><a href="#about">About</a></li>
+      <li class=" cursor-pointer  hover:font-extrabold font-bold text-xl underline hover:text-white"><a  href="#education">Education</a></li>
+      <li class=" cursor-pointer  hover:font-extrabold font-bold text-xl underline hover:text-white"><a href="#skills">Skills</a></li>
+      <li class=" cursor-pointer  hover:font-extrabold font-bold text-xl underline hover:text-white"><a href="#proj">Projects</a></li>
+      <li class=" cursor-pointer  hover:font-extrabold font-bold text-xl underline hover:text-white"><a href="#con">Contact</a></li>
+   
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+  <!-- nav bar ends -->
+
+
+  <!-- main section -->
+  <section id="home">
+
+    <div class="relative">
+      <header class="w-full h-auto " id="home">
+        <section class="flex flex-col justify-center antialiased bg-slate-950  text-gray-200 min-h-screen">
+          <div class="max-w-6xl mx-auto p-4 sm:px-6 h-full">
+            <!-- Blog post -->
+            <div
+              class="max-w-sm mx-auto md:max-w-none grid md:grid-cols-2 gap-6 md:gap-8 lg:gap-12 xl:gap-16 items-center">
+              <a class="relative block group" href="#0">
+                <div
+                  class="absolute inset-0 bg-gray-800 hidden md:block transform md:translate-y-2 md:translate-x-4 xl:translate-y-4 xl:translate-x-8 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-700 ease-out pointer-events-none"
+                  aria-hidden="true"></div>
+                <figure
+                  class="relative h-0 pb-[56.25%] md:pb-[75%] lg:pb-[56.25%] overflow-hidden transform md:-translate-y-2 xl:-translate-y-4 group-hover:translate-x-0 group-hover:translate-y-0 transition duration-700 ease-out">
+                  <img
+                    class="absolute inset-0 w-full h-full object-cover transform hover:scale-105 transition duration-700 ease-out"
+                    src="https://c0.wallpaperflare.com/preview/524/860/912/screen-code-coding-programming.jpg"
+                    width="540" height="303" alt="Blog post">
+                </figure>
+              </a>
+              <div>
+                <header class="flex space-x-2">
+
+                  <h3 class="text-2xl lg:text-3xl leading-tight mb-2 font-[Poppins,sans-serif] font-[750]">
+                    I’m </h3>
+                  <spam id="text"
+                    class="text-gray-100 text-2xl lg:text-3xl leading-tight mb-2 font-[Poppins,sans-serif] font-[750]">
+                  </spam>
+
+                </header>
+                <p class="text-lg text-gray-400 flex-grow text-left">Passionate software engineering student, skilled in
+                  HTML, CSS, JavaScript, C#, Java, and SQL. Enrolled in MERN Stack course, dedicated to
+                  crafting innovative, user-centric solutions.</p>
+                <footer class="flex items-center mt-10 ">
+
+                  <div class="px-14 space-x-2 md:flex-row flex  ">
+                    <div><a
+                        href="https://drive.google.com/file/d/1xexlfoLX-lnobkIUzQc2vdkcwu7bk75D/view?usp=sharing"><button
+                          class=" overflow-hidden md:px-9 items-center px-7 md:py-3 rounded-md  bg-transparent font-semibold border-white border-solid border-2 hover:bg-white hover:border-2 hover:border-solid hover:border-black  hover:text-slate-950">Download
+                          CV</button></a></div>
+                    <div><a href="#con"><button
+                          class="overflow-hidden md:px-14 sm:px-10 px-12 md:py-3  items-center rounded-md  bg-transparent font-semibold border-white border-solid border-2 hover:bg-white hover:border-2 hover:border-solid hover:border-black  hover:text-slate-950">
+                          Hire Me</button></a></div>
+
+
+                  </div>
+
+                </footer>
+              </div>
+            </div>
+          </div>
+        </section>
+      </header>
+
+      <div class=" right-0 pt-[40rem] opacity-75 fixed sm:end-6 sm:top-6 lg:end-8 lg:top-8">
+        <a class="inline-block rounded-full bg-teal-600 p-2 text-white shadow transition hover:bg-teal-500 sm:p-3 lg:p-4"
+          href="#">
+          <span class="sr-only">Back to top</span>
+
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd"
+              d="M14.707 12.707a1 1 0 01-1.414 0L10 9.414l-3.293 3.293a1 1 0 01-1.414-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 010 1.414z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+      </div>
+
+      <div class=" right-0  mt-[10rem] opacity-100 fixed sm:end-6 sm:top-6 lg:end-8 lg:top-8">
+        <a class="inline-block  rounded-full  text-white shadow transition hover:bg-teal-500"
+          href="https://www.facebook.com/muhammadbaasil.irfan">
+          <img class="w-full h-full object-contain rounded-full" src="/img/social/icons8-facebook-circled.gif" alt="">
+        </a>
+      </div>
+
+
+      <div class=" right-0  mt-[14rem] opacity-100 fixed sm:end-6 sm:top-6 lg:end-8 lg:top-8">
+        <a class="inline-block  rounded-full  text-white shadow transition hover:bg-teal-500"
+          href="https://www.instagram.com/basilrazriz/">
+          <img class="w-full h-full object-contain rounded-full" src="/img/social/icons8-instagram.gif" alt="">
+        </a>
+      </div>
+
+
+      <div class=" right-0  mt-[18rem] opacity-100 fixed sm:end-6 sm:top-6 lg:end-8 lg:top-8">
+        <a class="inline-block  rounded-full  text-white shadow transition hover:bg-teal-500"
+          href="https://www.linkedin.com/in/muhammad-basil-irfan-rizvi-886157215/">
+          <img class="w-full h-full object-contain rounded-full" src="/img/social/icons8-linkedin-circled.gif" alt="">
+        </a>
+      </div>
+      <div class=" right-0  mt-[22rem] opacity-100 fixed sm:end-6 sm:top-6 lg:end-8 lg:top-8">
+        <a class="inline-block  rounded-full  text-white shadow transition hover:bg-teal-500"
+          href="https://github.com/Baasilrazriz">
+          <img class="w-full h-full object-contain rounded-full" src="/img/social/icons8-github.gif" alt="">
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- main sec end -->
+
+
+  <!-- about section -->
+  <section id="about">
+    <div class="bg-slate-800 ">
+
+      <div class="p-5 ">
+
+        <div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10">
+          <div class="text-gray-500 w-full h-auto flex flex-wrap flex-col items-center ">
+            <p class=" font-bold text-3xl md:text-4xl text-center">About Me</p>
+            <div class="w-44 h-1 border-b-4 border-yellow-400 rounded-2xl mt-2 md:mt-3 ">
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="md:px-22  ">
+
+        <div
+          class="relative pb-10   md:flex md:flex-row flex flex-col md:items-start md:text-left items-center text-justify ">
+          <div
+            class="relative bottom-10  md:h-auto md:w-full object-cover object-center md:rounded-3xl rounded-full overflow-hidden md:m-10 my-5 mx-10 border-4 border-black">
+            <img src="/img/1687724094455.jpg" alt="">
+          </div>
+
+          <div class="md:mx-24 m-10">
+            <h1 class="font-bold text-white  font-serif  text-3xl">Hello everyone!</h1>
+            <p class="mt-2 mb-8 text-justify text-lg font-serif text-gray-400"> I am Muhammad Basil Irfan Rizvi, a
+              motivated and ambitious software engineering student at Bahria University. Currently pursuing a Bachelor’s
+              degree in Software Engineering, I am passionate about technology and constantly expanding my skill set. My
+              expertise includes HTML, CSS, JavaScript, C#, Java, and SQL.
+
+              With a keen interest in modern web development, I am currently enrolled in a comprehensive MERN Stack
+              course. I am eager to take on challenges and collaborate with fellow developers to create innovative and
+              user-centric solutions.</p>
+            <div class="md:flex block justify-between  md:px-10">
+
+              <div>
+
+                <div class="flex gap-2 ">
+                  <h1 class="md:pr-3 font-medium text-white  font-serif  md:text-2xl text-lg">Name :</h1>
+                  <p class="pt-1  text-justify md:text-xl text-base font-serif text-gray-400">Muhammad Basil irfan Rizvi
+                  </p>
+                </div>
+
+                <div class="flex gap-2">
+                  <h1 class="md:pr-3 font-medium text-white  font-serif  md:text-2xl text-lg">DOB :</h1>
+                  <p class="pt-1  text-justify md:text-xl text-base font-serif text-gray-400">June 30,2003</p>
+                </div>
+
+                <div class="flex gap-2">
+                  <h1 class="md:pr-3  font-medium text-white  font-serif  md:text-2xl text-lg">Sex :</h1>
+                  <p class="pt-1  text-justify md:text-xl text-base font-serif text-gray-400">M</p>
+                </div>
+
+
+              </div>
+
+              <div class="">
+
+                <div class="flex gap-2">
+                  <h1 class="md:pr-3 font-medium text-white  font-serif  md:text-2xl text-lg">Location:</h1>
+                  <p class="pt-1  text-justify md:text-xl text-base font-serif text-gray-400">Karachi, Sindh, Pakistan
+                  </p>
+                </div>
+
+                <div class="flex gap-2">
+                  <h1 class="md:pr-3 font-medium text-white  font-serif  md:text-2xl text-lg">Email:</h1>
+                  <p class="pt-1  text-justify md:text-xl text-base font-serif text-gray-400">baasilrazriz@gmail.com</p>
+                </div>
+
+                <div class="flex gap-2">
+                  <h1 class="md:pr-3 font-medium text-white  font-serif  md:text-2xl text-lg">Phone:</h1>
+                  <p class="pt-1  text-justify md:text-xl text-base font-serif text-gray-400">+923237184249</p>
+                </div>
+
+
+              </div>
+
+            </div>
+
+            <div class="flex items-center mt-20 mb-5 justify-around">
+
+              <div class=" space-x-2 md:flex-row flex  ">
+                <div><a
+                    href="https://drive.google.com/file/d/1xexlfoLX-lnobkIUzQc2vdkcwu7bk75D/view?usp=sharing"><button
+                      class=" overflow-hidden px-7 md:px-10 items-center  md:p-3 rounded-3xl font-bold text-xl bg-slate-950 text-gray-400  border-gray-400 border-solid border-2 hover:bg-gray-700 hover:border-2 hover:border-solid hover:border-black  hover:text-slate-950">Download
+                      CV</button></a></div>
+
+                <div><a href="#con"><button
+                      class=" overflow-hidden px-12 md:px-16 items-center  md:p-3 text-xl rounded-3xl font-bold bg-slate-950 text-gray-400  border-gray-400 border-solid border-2 hover:bg-gray-700 hover:border-2 hover:border-solid hover:border-black  hover:text-slate-950">Hire
+                      Me</button></a></div>
+
+
+
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </section>
+  <!-- about sec ends -->
+
+  <!-- education sec starts -->
+  <section id="education" class="bg-slate-950 px-5">
+
+    <div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10">
+      <div class="w-full h-auto flex flex-wrap flex-col items-center ">
+        <p class="text-gray-500 font-bold text-3xl md:text-4xl text-center">My Education</p>
+        <div class="w-44 h-1 border-b-4 border-yellow-400 rounded-2xl mt-2 md:mt-3 ">
+        </div>
+
+      </div>
+    </div>
+
+    <div>
+      <div class=" p-4 mt-6 pb-40">
+
+        <div class="container">
+
+          <div class="flex flex-col md:grid grid-cols-12 text-gray-50">
+
+
+            <div class="flex md:contents">
+              <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                <div class="h-full w-9 flex items-center justify-center">
+                  <div class="h-12 w-1 bg-gray-600 pointer-events-none"></div>
+                </div>
+                <div
+                  class="overflow-hidden w-10 h-10 absolute top-0 -mt-3 rounded-full  bg-gray-600 shadow text-center text-white">
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="flex md:contents ">
+
+              <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative ">
+
+                <div class="h-full w-9 flex items-center justify-center">
+
+                  <div class="h-full w-1  bg-gray-600 pointer-events-none"></div>
+                </div>
+                <div
+                  class="overflow-hidden  w-10 h-10 absolute top-1/2 -mt-3 rounded-full bg-gray-600 shadow text-center">
+                  <img class="h-full w-full" src="/img/education/bukc.png" alt="">
+                </div>
+              </div>
+
+              <div class="bg-gray-600 col-start-4 col-end-12 p-4 rounded-xl my-8 mr-auto shadow-md w-full  ">
+                <h1 class="text-gray-900 font-extrabold text-xl md:text-3xl  font-serif ">Bachelor’s in Software
+                  Engineering</h1>
+                <h1 class="text-gray-800 font-extrabold text-xl md:text-2xl  font-serif  mb-3 ">( 2021 - present )</h1>
+                <p class="leading-tight font-normal text-base text-justify w-full font-serif">
+                  I am currently pursuing a degree in Software Engineering at Bahria University. Throughout my academic
+                  journey, I have gained a solid understanding of software development principles and have acquired
+                  practical skills in various programming languages and frameworks.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex md:contents">
+              <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                <div class="h-full w-9 flex items-center justify-center">
+                  <div class="h-full w-1 bg-gray-600 pointer-events-none"></div>
+                </div>
+                <div
+                  class="overflow-hidden w-10 h-10 absolute  top-1/2 -mt-3 rounded-full bg-gray-600 shadow text-center">
+                  <img class="h-full w-full" src="/img/education/download.jpeg" alt="">
+                </div>
+              </div>
+              <div class="bg-gray-600 col-start-4 col-end-12 p-4 rounded-xl my-8 mr-auto shadow-md w-full">
+                <h3 class="text-gray-900 font-extrabold text-xl md:text-3xl  font-serif  ">Intermediate</h3>
+                <h1 class="text-gray-800 font-extrabold text-xl md:text-2xl  font-serif  mb-3 ">( 2019 - 2021 )</h1>
+                <p class="leading-tight font-serif text-justify font-normal text-base">
+                  In my journey towards becoming a Software Engineer, I completed my intermediate college degree in
+                  Pre-Engineering. This educational phase played a crucial role in shaping my understanding of
+                  foundational principles and setting the stage for my future pursuits.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex md:contents">
+              <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                <div class="h-full w-9 flex items-center justify-center">
+                  <div class="h-full w-1 bg-gray-600 pointer-events-none"></div>
+                </div>
+                <div
+                  class="overflow-hidden w-10 h-10 absolute top-1/2 -mt-3 rounded-full bg-gray-600 shadow text-center">
+                  <img class="h-full w-full" src="/img/education/download.jpeg" alt="">
+                </div>
+              </div>
+              <div class="bg-gray-600 col-start-4 col-end-12 p-4 rounded-xl my-10 mr-auto shadow-md w-full">
+                <h3 class="text-gray-900 font-extrabold text-xl md:text-3xl  font-serif  ">Matriculation</h3>
+                <h1 class="text-gray-800 font-extrabold text-xl md:text-2xl  font-serif  mb-3 ">( 2017 - 2019 )</h1>
+                <p class="leading-tight font-serif text-justify">
+                  During my formative years, I completed my Matriculation degree, which served as the foundation for my
+                  educational journey in the field of technology.
+                </p>
+              </div>
+            </div>
+
+
+            <div class="flex md:contents">
+              <div class="col-start-2 col-end-4 mr-10 md:mx-auto relative">
+                <div class="h-full w-9 flex items-center justify-center">
+                  <div class="h-12 w-1 bg-gray-600 pointer-events-none"></div>
+                </div>
+                <div
+                  class="overflow-hidden w-10 h-10 absolute bottom-0-0 -mt-3 rounded-full  bg-gray-600 shadow text-center text-white">
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- edu sec ends -->
+  <!-- skils starts-->
+  <section id="skills" class="bg-slate-800">
+    <div class="p-5 ">
+
+      <div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10">
+        <div class="text-gray-500 w-full h-auto flex flex-wrap flex-col items-center ">
+          <p class=" font-bold text-3xl md:text-4xl text-center">My Skills</p>
+          <div class="w-44 h-1 border-b-4 border-yellow-400 rounded-2xl mt-2 md:mt-3 ">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+    <div class="h-auto w-full md:px-36 pb-24">
+
+      <section class="py-5 w-full h-full flex flex-wrap gap-5 justify-center  ">
+
+        <div
+          class="w-40  text-center  border-[1px] bg-gray-300 border-solid border-yellow-50  shadow-md rounded-md p-1 hover:shadow-md hover:shadow-gray-500">
+          <img src="/img/skills/html5.png" class="w-full h-full object-cover" alt="">
+
+
+        </div>
+        <div
+          class="w-40  text-center  border-[1px] bg-gray-300 border-solid border-yellow-50  shadow-md rounded-md p-1 hover:shadow-md hover:shadow-gray-500">
+          <img src="/img/skills/css3.png" class="w-full h-full object-cover" alt="">
+
+
+        </div>
+        <div
+          class="w-40  text-center  border-[1px] bg-gray-300 border-solid border-yellow-50  shadow-md rounded-md p-1 hover:shadow-md hover:shadow-gray-500">
+          <img src="/img/skills/javascript.png" class="w-full h-full object-cover" alt="">
+
+
+        </div>
+        <div
+          class="w-40  text-center  border-[1px] bg-gray-300 border-solid border-yellow-50  shadow-md rounded-md p-1 hover:shadow-md hover:shadow-gray-500">
+          <img src="/img/skills/c-sharp.png" class="w-full h-full object-cover" alt="">
+
+
+        </div>
+        <div
+          class="w-40  text-center  border-[1px] bg-gray-300 border-solid border-yellow-50  shadow-md rounded-md p-1 hover:shadow-md hover:shadow-gray-500">
+          <img src="/img/skills/java.png" class="w-full h-full object-cover" alt="">
+
+
+        </div>
+        <div
+          class="w-40  text-center  border-[1px] bg-gray-300 border-solid border-yellow-50  shadow-md rounded-md p-1 hover:shadow-md hover:shadow-gray-500">
+          <img src="/img/skills/sql.png" class="w-full h-full object-cover" alt="">
+
+
+        </div>
+
+        <div
+          class="w-40  text-center  border-[1px] bg-gray-300 border-solid border-yellow-50  shadow-md rounded-md p-1 hover:shadow-md hover:shadow-gray-500">
+          <img src="/img/skills/mongodb.png" class="w-full h-full object-cover" alt="">
+
+
+        </div>
+        <div
+          class="w-40  text-center  border-[1px] bg-gray-300 border-solid border-yellow-50  shadow-md rounded-md p-1 hover:shadow-md hover:shadow-gray-500">
+          <img src="/img/skills/react.png" class="w-full h-full object-contain" alt="">
+
+
+        </div>
+        <div
+          class="w-40  text-center  border-[1px] bg-gray-300 border-solid border-yellow-50  shadow-md rounded-md p-1 hover:shadow-md hover:shadow-gray-500">
+          <img src="/img/skills/nodejs.png" class="w-full h-full object-cover" alt="">
+
+
+        </div>
+
+        <div
+          class="w-40  text-center  border-[1px] bg-gray-300 border-solid border-yellow-50  shadow-md rounded-md p-1 hover:shadow-md hover:shadow-gray-500">
+          <img src="/img/skills/bootstrap.png" class="w-full h-full object-cover" alt="">
+        </div>
+
+        <div
+          class="w-40  text-center  border-[1px] bg-gray-300 border-solid border-yellow-50  shadow-md rounded-md p-1 hover:shadow-md hover:shadow-gray-500">
+          <img src="/img/skills/tailwind-css-1.png" class="w-full h-full object-contain" alt="">
+        </div>
+        <div
+          class="w-40  text-center overflow-hidden  border-[1px] bg-gray-300 border-solid border-yellow-50  shadow-md rounded-md p-1 hover:shadow-md hover:shadow-gray-500">
+          <img src="/img/skills/express-109.png" class="w-full h-full object-contain" alt="">
+        </div>
+
+      </section>
+    </div>
+
+
+  </section>
+  <!-- skils ends-->
+  <!-- Achievements starts-->
+  <section id="Achievements" class="bg-slate-950">
+    <div class="p-5 ">
+
+      <div class="h-auto w-100 flex flex-wrap flex-col items-center text-center p-10">
+        <div class="text-gray-500 w-full h-auto flex flex-wrap flex-col items-center ">
+          <p class=" font-bold text-3xl md:text-4xl text-center">My Achievements</p>
+          <div class="w-44 h-1 border-b-4 border-yellow-400 rounded-2xl mt-2 md:mt-3 ">
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="md:px-24 px-10 pb-24">
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative h-96 w-full">
+          <img src="/img/cert/download (1).png" class="w-full h-full object-contain" />
+
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide3 " class="btn btn-circle">❮</a>
+            <a href="#slide2 " class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative h-96 w-full">
+          <img src="/img/cert/download (2).png " class="w-full h-full object-contain" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5  top-1/2">
+            <a href="#slide1 " class="btn btn-circle">❮</a>
+            <a href="#slide3 " class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative h-96 w-full">
+          <img src="/img/cert/download.png" class="w-full h-full object-contain" />
+          <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <a href="#slide2 " class="btn btn-circle">❮</a>
+            <a href="#slide1 " class="btn btn-circle">❯</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <!-- Achievements ends-->
+
+  <!-- proj sec -->
+  <section id="proj">
+
+    <div class="bg-slate-800 h-auto w-100 flex flex-wrap flex-col items-center text-center px-10 py-5" id="proj">
+      <div class="text-gray-500 w-full h-auto flex flex-wrap flex-col items-center ">
+        <p class=" font-bold text-3xl md:text-4xl text-center">My Projects</p>
+        <div class="w-44 h-1 border-b-4 border-yellow-400 rounded-2xl mt-2 md:mt-3 ">
+        </div>
+
+      </div>
+    </div>
+    <div class="pt-14 pb-28 px-10 md:px-28 bg-slate-800  ">
+
+
+      <div id="projects" class=" text-white section-p1 bg-slate-950 border-2 rounded-2xl">
+
+        <div id="searchbar"
+          class="overflow-hidden flex w-full h-auto justify-between  bg-gray-400 text-black  border-2 rounded-tl-2xl rounded-tr-2xl">
+
+          <div class="hidden md:block">
+            <ul class="md:flex font-semibold hidden  ">
+              <li
+                class="m-[10px] cursor-pointer  hover:font-bold  hover:text-white active:after:border-2 active:after:border-white active:after:rounded-3xl py-1 px-2 text-center  ">
+                All projects</li>
+              <li
+                class="m-[10px] cursor-pointer  hover:font-bold  hover:text-white active:after:border-2 active:after:border-white active:after:rounded-3xl py-1 px-2 text-center">
+                C#</li>
+              <li
+                class="m-[10px] cursor-pointer  hover:font-bold  hover:text-white active:after:border-2 active:after:border-white active:after:rounded-3xl py-1 px-2 text-center">
+                JAVA </li>
+              <li
+                class="m-[10px] cursor-pointer  hover:font-bold  hover:text-white active:after:border-2 active:after:border-white active:after:rounded-3xl py-1 px-2 text-center">
+                WEB</li>
+            </ul>
+
+          </div>
+          <div class="  ">
+
+            <!-- <input type="text" name="price" id="price"
+              class=" block w-full rounded-md border-0 p-1 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+              placeholder="  search"> -->
+            <div class="form-control md:mt-0.5 md:mr-3  w-full">
+              <div class="input-group ">
+                <input type="text" placeholder="Search…" class="input input-bordered" />
+                <button class="btn btn-square">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="text-gray-600 body-font">
+          <div class="container px-5 py-24 mx-auto">
+
+            <div class="flex flex-wrap -m-4">
+              <div id="proj1" class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401"
+                    alt="content">
+                  <h3 class="tracking-widest text-yellow-500 text-xs font-medium title-font">C#</h3>
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
+                  <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                    hexagon disrupt edison bulbche.</p>
+                </div>
+              </div>
+
+              <div id="proj2" class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/721x401"
+                    alt="content">
+                  <h3 class="tracking-widest text-yellow-500 text-xs font-medium title-font">C#</h3>
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Colosseum Roma</h2>
+                  <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                    hexagon disrupt edison bulbche.</p>
+                </div>
+              </div>
+              <div id="proj3" class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/722x402"
+                    alt="content">
+                  <h3 class="tracking-widest text-yellow-500 text-xs font-medium title-font">JAVA</h3>
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Great Pyramid of Giza</h2>
+                  <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                    hexagon disrupt edison bulbche.</p>
+                </div>
+              </div>
+              <div id="proj4" class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403"
+                    alt="content">
+                  <h3 class="tracking-widest text-yellow-500 text-xs font-medium title-font">WEB</h3>
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+                  <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                    hexagon disrupt edison bulbche.</p>
+                </div>
+              </div>
+              <div id="proj5" class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403"
+                    alt="content">
+                  <h3 class="tracking-widest text-yellow-500 text-xs font-medium title-font">SUBTITLE</h3>
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+                  <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                    hexagon disrupt edison bulbche.</p>
+                </div>
+              </div>
+              <div id="proj6" class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403"
+                    alt="content">
+                  <h3 class="tracking-widest text-yellow-500 text-xs font-medium title-font">SUBTITLE</h3>
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+                  <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                    hexagon disrupt edison bulbche.</p>
+                </div>
+              </div>
+              <div id="proj7" class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403"
+                    alt="content">
+                  <h3 class="tracking-widest text-yellow-500 text-xs font-medium title-font">SUBTITLE</h3>
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+                  <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                    hexagon disrupt edison bulbche.</p>
+                </div>
+              </div>
+              <div id="proj8" class="xl:w-1/4 md:w-1/2 p-4">
+                <div class="bg-gray-100 p-6 rounded-lg">
+                  <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/723x403"
+                    alt="content">
+                  <h3 class="tracking-widest text-yellow-500 text-xs font-medium title-font">SUBTITLE</h3>
+                  <h2 class="text-lg text-gray-900 font-medium title-font mb-4">San Francisco</h2>
+                  <p class="leading-relaxed text-base">Fingerstache flexitarian street art 8-bit waistcoat. Distillery
+                    hexagon disrupt edison bulbche.</p>
+                </div>
+              </div>
+
+
+
+
+            </div>
+
+          </div>
+        </div>
+
+        <div id="footer" class=" w-full h-auto bg-gray-400 text-black  border-2 rounded-bl-2xl rounded-br-2xl">
+          <div class="overflow-hidden p-1 text-center  text-2xl font-bold">
+            <button id="see" class="p-2 border-4 rounded-full px-3 border-black">see more ...</button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <!-- proj sec ends -->
+
+  <!-- contact us -->
+  <section id="con" class="bg-slate-950 ">
+    <div class=" ">
+      <div class="bg-slate-950 h-auto w-100 flex flex-wrap flex-col items-center text-center p-10" id="proj">
+        <div class="text-gray-500 w-full h-auto flex flex-wrap flex-col items-center ">
+          <p class=" font-bold text-3xl md:text-4xl text-center">Contact Me</p>
+          <div class="w-44 h-1 border-b-4 border-yellow-400 rounded-2xl mt-2 md:mt-3 ">
+          </div>
+
+          <div class="h-auto md:w-[1100px]">
+            <p class="text-center w-full  mt-10 text-lg  md:text-2xl font-serif font-bold">
+              Feel free to Contact me by submitting the form and I will get back to you as soon as possible.
+            </p>
+
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div>
+
+        <section class="">
+          <div class="text-gray-400 mx-auto max-w-screen-xl px-4 py-20 sm:px-6 lg:px-8 ">
+
+            <div class="grid grid-cols-1 gap-x-16 gap-y-8 lg:grid-cols-5 md:mx-0 mx-10 ">
+
+              <div class="lg:col-span-2 lg:py-12">
+                <div class="mt-8">
+                  <div class="">
+
+                    <div
+                      class="flex  py-3 border-2 border-black  rounded-lg bg-gray-800 mb-5 hover:border-green-500 hover:drop-shadow-xl transition-shadow ">
+                      <h1 class="md:pr-3 ml-2 font-medium text-gray-400  font-serif  md:text-2xl text-lg">Location:</h1>
+                      <h1 class="pt-0.5  text-center md:text-2xl text-base font-serif text-green-500">Karachi, Sindh,
+                        Pakistan
+                      </h1>
+                    </div>
+
+                    <div
+                      class="flex py-3 border-2 border-black  rounded-lg bg-gray-800 mb-5 hover:border-blue-700 hover:drop-shadow-xl transition-shadow">
+                      <h1 class="md:pr-3 ml-2 font-medium text-gray-400  font-serif  md:text-2xl text-lg">Email:</h1>
+                      <h1 class="pt-0.5  text-center md:text-2xl text-base font-serif text-blue-700">
+                        baasilrazriz@gmail.com</h1>
+                    </div>
+
+                    <div
+                      class="flex  py-3 border-2 border-black  rounded-lg bg-gray-800 mb-5 hover:border-red-600 hover:drop-shadow-xl transition-shadow">
+                      <h1 class="md:pr-3 ml-2 font-medium  text-gray-400 font-serif  md:text-2xl text-lg">Phone:</h1>
+                      <h1 class="pt-0.5  text-center md:text-2xl text-base font-serif text-red-600">+923237184249</h1>
+                    </div>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="rounded-lg border-2 border-gray-500 bg-gray-500 w-auto  md:h-auto overflow-hidden shadow-lg lg:col-span-3 lg:p-10 p-5 ">
+                <form action="" class="space-y-4">
+                  <div class="flex justify-between gap-9 mb-8">
+                    <label class="sr-only" for="name">Name</label>
+                    <input
+                      class="w-full rounded-lg border-gray-200 bg-gray-200 p-3 text-sm hover:border-2 hover:border-black"
+                      placeholder="Name" type="text" id="name" required />
+                    <label class="sr-only" for="email">Email</label>
+                    <input
+                      class="w-full rounded-lg border-gray-200 bg-gray-200 p-3 text-sm hover:border-2 hover:border-black"
+                      placeholder="Email address" type="email" id="email" required />
+
+                  </div>
+
+                  <div class=" ">
+
+
+                    <div class=" mb-8">
+                      <label class="sr-only" for="subject">subject</label>
+                      <input class="w-full rounded-lg  bg-gray-200 p-3 text-sm hover:border-2 hover:border-black"
+                        placeholder="subject" type="tel" id="phone" />
+                    </div>
+                  </div>
+
+
+
+                  <div>
+                    <label class="sr-only" for="message">Message</label>
+
+                    <textarea
+                      class="w-full rounded-lg border-gray-200 bg-gray-200 p-3 text-sm hover:border-2 hover:border-black"
+                      placeholder="Message" rows="8" id="message " required></textarea>
+                  </div>
+
+                  <div class="flex justify-end">
+                    <div><button
+                        class=" overflow-hidden px-7 md:px-10 items-center p-3 rounded-xl font-bold text-xl bg-slate-950 text-gray-400  border-gray-400 border-solid border-2 hover:bg-gray-700 hover:border-2 hover:border-solid hover:border-black  hover:text-slate-950">
+                        SEND</button></div>
+                  </div>
+                </form>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+  <!-- contact end -->
+  <footer class="bg-gray-800">
+    <div class="relative mx-auto max-w-screen-xl py-10 sm:px-6 lg:px-8 lg:pt-24">
+
+      <div class="lg:flex lg:items-end lg:justify-between hidden">
+        <div class="">
+          <img src="/img/flg_logo11134.png" class="h-[70px] w-80" alt="">
+
+        </div>
+
+        <ul class="mt-12 flex flex-wrap justify-center  md:gap-2 lg:mt-0 lg:justify-end lg:gap-5">
+          <li>
+            <a class="text-gray-400 font-serif text-lg transition hover:text-gray-700/75" href="/">
+              Home
+            </a>
+          </li>
+
+          <li>
+            <a class="text-gray-400 font-serif text-lg transition hover:text-gray-700/75" href="/">
+              About
+            </a>
+          </li>
+
+          <li>
+            <a class="text-gray-400 font-serif text-lg transition hover:text-gray-700/75" href="/">
+              Education
+            </a>
+          </li>
+          <li>
+            <a class="text-gray-400 font-serif text-lg transition hover:text-gray-700/75" href="/">
+              skills
+            </a>
+          </li>
+          <li>
+            <a class="text-gray-400 font-serif text-lg transition hover:text-gray-700/75" href="/">
+              Achievements
+            </a>
+          </li>
+
+          <li>
+            <a class="text-gray-400 font-serif text-lg transition hover:text-gray-700/75" href="/">
+              Project
+            </a>
+          </li>
+
+          <li>
+            <a class="text-gray-400 font-serif text-lg transition hover:text-gray-700/75" href="/">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="md:mt-5 md:pl-14  pl-20 flex md:gap-3 gap-3 w-full">
+
+        <div class="  opacity-100  ">
+          <a class="inline-block  h-14 w-14 rounded-full  text-white shadow transition hover:bg-teal-500"
+            href="https://www.facebook.com/muhammadbaasil.irfan">
+            <img class="w-full h-full object-contain rounded-full" src="/img/social/icons8-facebook-circled.gif" alt="">
+          </a>
+        </div>
+
+
+        <div class="  opacity-100  ">
+          <a class="inline-block h-14 w-14  rounded-full  text-white shadow transition hover:bg-teal-500"
+            href="https://www.instagram.com/basilrazriz/">
+            <img class="w-full h-full object-contain rounded-full" src="/img/social/icons8-instagram.gif" alt="">
+          </a>
+        </div>
+
+
+        <div class="  opacity-100  ">
+          <a class="inline-block  h-14 w-14 rounded-full  text-white shadow transition hover:bg-teal-500"
+            href="https://www.linkedin.com/in/muhammad-basil-irfan-rizvi-886157215/">
+            <img class="w-full h-full object-contain rounded-full" src="/img/social/icons8-linkedin-circled.gif" alt="">
+          </a>
+        </div>
+
+        <div class="  opacity-100 ">
+          <a class="inline-block h-14 w-14  rounded-full  text-white shadow transition hover:bg-teal-500"
+            href="https://github.com/Baasilrazriz">
+            <img class="w-full h-full object-contain rounded-full" src="/img/social/icons8-github.gif" alt="">
+          </a>
+        </div>
+      </div>
+        <p class="mt-5 md:mt-20 md:ml-[15rem] text-center  text-gray-400 font-serif text-base lg:text-right">
+          Copyright &copy; 2023. All rights reserved.
+        </p>
+      
+    </div>
+
+
+
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+  <script src="/dist/autotyping.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/dist/script.js"></script>
+</body>
+
+</html>
